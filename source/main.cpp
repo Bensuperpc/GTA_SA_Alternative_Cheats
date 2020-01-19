@@ -11,6 +11,6 @@
 int main(int argc, const char *argv[])
 {
     cheat_code_finder ccf;
-
+    ccf.launch_finder();
     return 0;
 }

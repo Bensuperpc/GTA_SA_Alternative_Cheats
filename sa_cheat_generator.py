@@ -6,7 +6,7 @@ cheat_list = [0xDE4B237D, 0xB22A28D1, 0x5A783FAE, 0xEECCEA2B, 0x42AF1E28, 0x555F
 0xE49C3ED4, 0x171BA8CC, 0x86988DAE, 0x2BDD2FA1]
 
 import binascii, string
-max_char = 29 # max should be 29
+max_char = 2 # max should be 29
 cheat_string = 'HESOYA'[::-1]
 insert_string_before = True
 alphabet = list(string.ascii_uppercase)
@@ -22,6 +22,10 @@ while True:
 	else: 
 		list_characters.append(-1)
 	now += 1
+ 
+print(list_characters)
+print(cheat_string)
+
 
 final_list = []
 
@@ -40,6 +44,7 @@ while True:
 					list_characters[char+1] += 1
 			except:
 				print(final_list)
+				print(list_characters)
 				quit()
 		if list_characters[char] == -1:
 			break

@@ -10,7 +10,7 @@
 
 #include <iostream>
 #include <string>
-//#include <vector>
+#include <vector>
 
 class cheat_code_finder {
   public:
@@ -19,7 +19,13 @@ class cheat_code_finder {
 
     void launch_finder();
 
+    std::vector<std::vector<std::string>> cheat_code;
+
+    const int max_char = 29;
+    
   private:
+    //For storage in vector
+    bool storage_in_vect = false;
     // Test later with vector
     const long int cheat_list[87] = {0xDE4B237D, 0xB22A28D1, 0x5A783FAE, 0xEECCEA2B, 0x42AF1E28, 0x555FC201, 0x2A845345,
         0xE1EF01EA, 0x771B83FC, 0x5BF12848, 0x44453A17, 0xFCFF1D08, 0xB69E8532, 0x8B828076, 0xDD6ED9E9, 0xA290FD8C,

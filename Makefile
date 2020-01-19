@@ -11,8 +11,7 @@ CXX			=	g++
 CPPFLAGS	=	-W -Wall -Wpedantic -Wextra -Wshadow -Wstrict-overflow=5 -Wmissing-declarations -Wundef		\
 				-Wstack-protector -Wno-unused-parameter -Wunreachable-code -march=native -pipe -std=c++17	\
 				-Woverloaded-virtual  -Wdisabled-optimization -Winline -Wredundant-decls -Wsign-conversion 	\
-				-I $(INCLUDE) 																				\
-				# -lpthread -static -static-libgcc -static-libstdc++ -nostdlib								\
+				-I $(INCLUDE) -lpthread																		\
 
 #=========	BINARIES NAMES	=========
 BIN			=	GTA_Cheat
@@ -20,7 +19,7 @@ BIN			=	GTA_Cheat
 #=========	FILES NAMES	=========
 INCLUDE 	= 	include/									\
 
-SOURCE		=												\
+SOURCE		=	cheat_code_finder.cpp						\
 
 
 

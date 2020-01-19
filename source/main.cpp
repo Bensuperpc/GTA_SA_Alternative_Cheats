@@ -6,11 +6,11 @@
 */
 
 #include <iostream>
-
+#include "cheat_code_finder.hpp"
 
 int main(int argc, const char *argv[])
 {
-    std::cout << "OK" << std::endl;
- 
+    cheat_code_finder ccf;
+
     return 0;
 }
